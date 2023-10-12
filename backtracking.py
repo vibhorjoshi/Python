@@ -1,0 +1,7 @@
+Backtracking is a general algorithm for finding all (or some) solutions to some computational problems, that incrementally builds candidates to the solutions. As soon as it determines that a candidate cannot possibly lead to a valid complete solution, it abandons this partial candidate and “backtracks’’ (return to the upper level) and reset to the upper level’s state so that the search process can continue to explore the next branch. Backtracking is all about choices and consequences, this is why backtracking is the most common algorithm for solving constraint satisfaction problem (CSP, CSPs are mathematical questions defined as a set of objects whose state must satisfy a number of constraints or limitations, visit wiki for more information, such as Eight Queens puzzle, Map Coloring problem, Sudoku, Crosswords, and many other logic puzzles.
+
+Properties and Applications
+To generalize the characters of backtracking:
+
+No Repetition and Completion: It is a systematic generating method that avoids repetitions and missing any possible right solution. This property makes it ideal for solving combinatorial problems such as combination and permutation which requires us to enumerate all possible solutions.
+Search Pruning: Because the final solution is built incrementally, in the process of working with partial solutions, we can evaluate the partial solution and prune branches that would never lead to the acceptable complete solution: either it is invalid configuration, or it is worse than known possible complete solution.
